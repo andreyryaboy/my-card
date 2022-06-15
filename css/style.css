@@ -11,8 +11,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  background: #fff;
-  color: #000;
   font-family: 'Inter', sans-serif;
   font-weight: 200;
 }
@@ -20,65 +18,59 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 ol, ul, li {
   list-style: none;
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 7%;
+h3 { 
+  font-size: 5vh;
+  font-weight: 600;
+}
+h4 {
+  font-size: 3vh;
+  font-weight: 600;
+}
+li {
+  padding: 1vh 7vh;
+  
+}
+p {
+  padding: 1vh 0;
 }
 .wrapper {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-section{
-  padding: 2vh;
-}
-section i {
-  margin: 10px 10px 10px 10px;
 }
 .left-bar {
-  width: 40%;
-  flex-direction: row;
+  padding: 5vh;
+  max-width: 20%;
+}
+.left-bar div {
+  padding: 2vh 0;
+}
+.img {
+  max-width: 320px;
+  min-height: 320px;
+  border-radius: 7%;
 }
 .right-bar {
-  width: 60%;
-  opacity: 0.8;
+  width: 100%;
+  padding: 10vh  34vh;
 }
-.photo {
-  width: 320px;
-  height: 320px;
-}
-.tools-list ul {
-  padding-top: 1vh;
-}
-h3 {
-  font-weight: 400;
-}
-.profession {
+.work-place {
+  font-size: 13vh;
   font-weight: 700;
 }
-
-
-
-
-
-
-
-/* .theme {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  padding: 10px;;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.implement {
+  padding-top: 5vh;
 }
-.theme i {
-  cursor: pointer;
-} */
+.icon {
+  font-size: 4vh;
+}
+
+.double {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #181818;
@@ -86,5 +78,4 @@ h3 {
   .wrapper {
     filter: invert(100%);
   }
-  
 }
