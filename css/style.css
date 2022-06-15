@@ -15,14 +15,14 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: 200;
 }
 body{
-  color: #fff;
+  color: #000;
 }
 
 ol, ul, li {
   list-style: none;
 }
 h3 { 
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: 600;
 }
 h4 {
@@ -39,7 +39,7 @@ p {
 .wrapper {
   width: 100%;
   display: flex;
-  background: #000;
+  background: #fff;
 }
 .left-bar {
   padding: 3vh;
@@ -79,9 +79,22 @@ p {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #fff;
+    background-color: #000;
   }
   .wrapper, .img {
     filter: invert(100%);
+  }
+}
+
+
+@media only screen and (max-width: 920px) {
+  .right-bar{
+    padding: 0 1vh;
+  }
+  .left-bar{
+    max-width: 100%;
+  }
+  .wrapper{
+    display: block;
   }
 }
