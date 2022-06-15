@@ -14,6 +14,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-family: 'Inter', sans-serif;
   font-weight: 200;
 }
+body{
+  color: #fff;
+}
 
 ol, ul, li {
   list-style: none;
@@ -36,22 +39,24 @@ p {
 .wrapper {
   width: 100%;
   display: flex;
+  background: #000;
 }
 .left-bar {
-  padding: 5vh;
+  padding: 3vh;
   max-width: 20%;
 }
 .left-bar div {
-  padding: 2vh 0;
+  padding: 1vh 0;
 }
 .img {
   max-width: 320px;
-  min-height: 320px;
+  max-height: 320px;
   border-radius: 7%;
 }
 .right-bar {
   width: 100%;
-  padding: 10vh  34vh;
+  padding: 7vh  34vh;
+  opacity: .7;
 }
 .work-place {
   font-size: 7vh;
@@ -71,11 +76,12 @@ p {
 }
 
 
+
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #181818;
+    background-color: #fff;
   }
-  .wrapper {
+  .wrapper, .img {
     filter: invert(100%);
   }
 }
